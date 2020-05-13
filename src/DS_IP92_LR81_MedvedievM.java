@@ -119,9 +119,7 @@ class DirectedGraph extends Graph {
             int streamOnVerge = Math.abs(startAdjacencyMatrix[verge[0] - 1][verge[1] - 1] - adjacencyMatrix[verge[0] - 1][verge[1] - 1]);
             System.out.println(verge[0] + "->" + verge[1] + " = " + streamOnVerge);
         }
-
         this.adjacencyMatrix = startAdjacencyMatrix;
-
     }
 
     private int findMinimalStreamOnWay(ArrayList<int[]> notes) {
